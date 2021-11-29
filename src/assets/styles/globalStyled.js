@@ -66,4 +66,5 @@ export default createGlobalStyle`
   ul {
     list-style: none;
   }
+
 `
