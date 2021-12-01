@@ -8,8 +8,14 @@ const PageRoute = () => {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" caseSensitive={false} element={< Home />} />
-        <Route exact path="/map" caseSensitive={false} element={< MapPage />} />
+        <Route
+          exact path="/"
+          caseSensitive={false}
+          element={< Home />} />
+        <Route
+          exact path="/map"
+          caseSensitive={false}
+          element={< MapPage />} />
       </Routes>
     </Router>
   );
