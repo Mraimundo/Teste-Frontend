@@ -15,7 +15,7 @@ Css3
 
 # Como usar
 
-git clone https://github.com/Mraimundo/teste-agenciaweber-html-css.git
+git clone https://github.com/Mraimundo/Teste-Frontend
 - cd teste-frontend.
 - cd pokemons
 - code . ou abra a pasta pokemons no editor de texto.
