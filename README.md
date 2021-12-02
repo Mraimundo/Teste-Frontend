@@ -16,7 +16,7 @@ NOTA : Aplicação com interação de duas paginas de pokemons.
 
 # Como usar
 
-git clone https://github.com/Mraimundo/Teste-Frontend
+git clone https://github.com/Mraimundo/Teste-Frontend.git
 - cd teste-frontend.
 - cd pokemons
 - code . ou abra a pasta pokemons no editor de texto.
