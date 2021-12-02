@@ -31,3 +31,12 @@ export const ButtonWrapper = styled.button`
 export const Icon = styled.img``;
 
 export const Text = styled.span``;
+
+export const Content = styled.div`
+  position: relative;
+  height: 96%;
+  margin-top: 156px;
+  background: #F7F9FC;
+  border-radius: 24px 24px 5px 5px;
+  padding-top: 90px;
+`;

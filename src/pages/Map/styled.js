@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 import img from "../../assets/images/pageBackground.png";
-import searchTooltip from "../../assets/images/searchTooltip.png";
 
 export const MapWrapper = styled.div`
   position: relative;
@@ -14,7 +13,7 @@ export const MapWrapper = styled.div`
 export const Container = styled.div`
   position: relative;
   width: 100%;
-  height: 100%;
+  height: 60%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -49,8 +48,12 @@ export const AvatarPokemon = styled.div`
   height: 147px;
   top: -70px;
   left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transform: translateX(-50%);
-  background: #67AF32;
+  background: #F7F9FC;
+  border: 4px solid #00D68F;
   border-radius: 50%;
 `;
 
@@ -169,7 +172,7 @@ export const BtnGroup = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 18px;
-  button {
+  > button {
     width: 99px;
     height: 32px;
     border: none;

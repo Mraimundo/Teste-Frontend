@@ -84,7 +84,7 @@ export default createGlobalStyle`
     max-width: 360px;
     height: 60%;
     margin-top: -60px;
-    background: #00D68F;
+    background: linear-gradient(90deg, #43E97B 0%, #38F9D7 100%);;
     padding: 0px;
     position: relative;
     transform: translateY(-40px);
@@ -99,6 +99,7 @@ export default createGlobalStyle`
     top: 24px;
     border-color: #222;
     border-radius: 20px;
+    cursor: pointer;
   }
 
 `
