@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Modal from "react-modal";
 
 import Button from "../../components/Button";
 import InputText from "../../components/InputText";
+import InputNumber from "../../components/InputNumber";
 
 import iconPlus from "../../assets/images/plus.png";
 import closeModal from "../../assets/images/close.png";
@@ -23,6 +24,9 @@ const Sidebar = () => {
     setIsPokemonDetailsModalOpen(false);
   }
 
+  function handleSubmit(e) {
+    e.preventDefault();
+  }
 
 
   return (
@@ -58,7 +62,18 @@ const Sidebar = () => {
               placeholder="Nome"
               label="Nome"
             />
-            <button type="submit">
+            <InputNumber
+              placeholder="HP"
+              label="HP"
+            />
+            <InputNumber
+              placeholder="Peso"
+              label="Peso"
+            />
+            <button
+              type="submit"
+              onSubmit={() => handleSubmit()}
+            >
               Criar Pokemon
             </button>
           </S.Container>

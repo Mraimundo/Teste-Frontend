@@ -42,11 +42,14 @@ export const SideBarItem = styled.li`
 
 export const Content = styled.div`
   position: relative;
-  height: 96%;
-  margin-top: 156px;
+  height: 100%;
+  margin-top: 130px;
   background: #F7F9FC;
   border-radius: 24px 24px 5px 5px;
-  padding-top: 90px;
+  padding-top: 70px;
+  @media screen and (max-width: 720px){
+    height: 100%;
+   }
 `;
 
 export const AddPhoto = styled.div`
@@ -79,6 +82,7 @@ export const Container = styled.form`
     align-items: center;
     text-transform: uppercase;
     cursor: pointer;
+    margin-top: 9px;
   }
 `;
 

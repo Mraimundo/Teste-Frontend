@@ -89,7 +89,27 @@ export default createGlobalStyle`
     position: relative;
     transform: translateY(-40px);
     border-radius: 5px;
+    
   }
+
+  @media screen and (max-width: 720px){
+    .react-modal-content {
+      height: 80%;
+    }
+   }
+
+   @media screen and (width: 360px){
+    .react-modal-content {
+      height: 82%;
+    }
+   }
+  
+   @media screen and (min-width: 718px) and (max-width: 995px){
+    .react-modal-content {
+      height: 60%;
+      transform: translateY(-50px);
+    }
+   }
 
   .react-modal-close {
     width: 40px;

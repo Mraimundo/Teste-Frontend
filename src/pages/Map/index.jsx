@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import Modal from "react-modal";
 import { api } from "../../services/api";
 
@@ -12,8 +12,8 @@ import * as S from "./styled";
 
 const MapPage = () => {
   const [id, setId] = useState(1)
-  const [showTooltip, setShowTootip] = useState(false);
   const [pokemons, setPokemons] = useState(null);
+  const [showTooltip, setShowTootip] = useState(false);
   const [isPokemonDetailsModalOpen, setIsPokemonDetailsModalOpen] = useState(false);
 
   function randomPokemons(min, max) {
@@ -40,9 +40,7 @@ const MapPage = () => {
     <S.MapWrapper className="map">
       <Sidebar />
       <S.Container>
-        {
-          showTooltip && <S.Tooltip ><img src={searchTooltip} alt="Pesquisar Pokemon" /></S.Tooltip>
-        }
+        {showTooltip && <S.Tooltip ><img src={searchTooltip} alt="Pesquisar Pokemon" /></S.Tooltip>}
         <S.Character>
           <img
             onClick={() => handleOpenDetailsModal()}

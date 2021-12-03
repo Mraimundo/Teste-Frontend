@@ -8,6 +8,7 @@ export const MapWrapper = styled.div`
   background-color: #5dae12;
   background-size: cover;
   height: 100vh;
+  
 `;
 
 export const Container = styled.div`
@@ -24,13 +25,20 @@ export const Tooltip = styled.div`
   position: absolute;
   top: 50%;
   transform: translateY(-100px);
+  img {
+    width: 100%;
+    max-width: 64px;
+    height: 59px;
+  }
 `;
 
 export const Character = styled.div`
   img {
+    width: 100%;
+    max-width: 64px;
+    height: 64px;
     cursor: pointer;
   }
-  
 `;
 
 export const Content = styled.div`
@@ -40,6 +48,11 @@ export const Content = styled.div`
   background: #F7F9FC;
   border-radius: 24px 24px 5px 5px;
   padding-top: 90px;
+
+  @media screen and (min-width: 718px) and (max-width: 995px){
+    height: 100%;
+   }
+
 `;
 
 export const AvatarPokemon = styled.div`
@@ -78,6 +91,10 @@ export const PokemonInfo = styled.div`
   justify-content: space-evenly;
   align-items: center;
   margin-top: 18px;
+
+  @media screen and (min-width: 718px) and (max-width: 995px){
+    margin-top: 10px;
+   }
 `;
 
 export const Hp = styled.div`
@@ -154,17 +171,13 @@ export const Peso = styled.div`
   }
 `;
 
-export const Separator = styled.div`
-  width: 100%;
-  max-width: 311px;
-  height: 2px;
-  margin-top: 25px;
-  background: #C5CEE0;
-`;
-
 export const TypesPokemons = styled.h2`
   margin-top: 18px;
   text-transform: uppercase;
+
+  @media screen and (min-width: 718px) and (max-width: 995px){
+    margin-top: 10px;
+   }
 `;
 
 export const BtnGroup = styled.div`
@@ -172,6 +185,9 @@ export const BtnGroup = styled.div`
   justify-content: center;
   align-items: center;
   margin-top: 18px;
+  @media screen and (min-width: 718px) and (max-width: 995px){
+    margin-top: 10px;
+   }
   > button {
     width: 99px;
     height: 32px;
@@ -196,10 +212,19 @@ export const BtnGroup = styled.div`
 export const SkillsPokemons = styled.h2`
   margin-top: 18px;
   text-transform: uppercase;
+
+  @media screen and (min-width: 718px) and (max-width: 995px){
+    margin-top: 10px;
+   }
 `;
 export const SkillsGroup = styled.div`
   margin-top: 12px;
   display: flex;
+
+  @media screen and (min-width: 718px) and (max-width: 995px){
+    margin-top: 5px;
+   }
+
   p {
     padding-right: 8px;
     font-family: Open Sans;

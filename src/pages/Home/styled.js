@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(rgba(0,214,143,1), rgba(0,214,143, 0.48));
+  background: linear-gradient(90deg, #43E97B 0%, #38F9D7 100%);
 `;
 
 export const HomeWrapper = styled.div`
@@ -21,20 +21,28 @@ export const Content = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  img {
+    width: 100%;
+    max-width: 270px;
+    height: 99px;
+  }
 `;
 
 export const Button = styled.button`
     margin-top: 25px;
-    width: 84px;
-    height: 38px;
+    width: 124px;
+    height: 56px;
     display: flex;
     justify-content: center;
     border: none;
-    border-radius: 50px;
+    border-radius: 42px;
     align-items: center;
     background:  #ff3d71;
-    color: #fff;
+    font-family: Open Sans;
+    font-style: normal;
     font-weight: bold;
+    font-size: 18px;
+    color: #fff;
     cursor: pointer;
 
     .link {
